@@ -1,0 +1,34 @@
+baseURL = 'https://indivisibleman.github.io/'
+languageCode = 'en-gb'
+title = 'IndivisibleMan'
+theme=['PaperMod', 'hugo-shortcode-gallery']
+
+[taxonomies]
+tag = 'tags'
+category = 'categories'
+
+[params.homeInfoParams]
+Title = 'Hi there wave'
+Content = 'Can be Info, links, about...'
+
+[menu]
+[[menu.main]]
+  identifier = 'posts'
+  name = 'Posts'
+  url = '/posts/'
+  weight = -110
+  
+  [[menu.main]]
+  identifier = 'categories'
+  name = 'Categories'
+  url = '/categories/'
+  weight = -105
+
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  url = '/info/about/'
+  weight = -100
+
+[imaging.exif]
+    includeFields = ".*"
